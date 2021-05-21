@@ -17,10 +17,10 @@ public class LineComparison {
         double b = Math.pow(v_y,2);
         double c = Math.pow(v_a,2);
         double d = Math.pow(v_b,2);
-        double linelength_1 = Math.sqrt(a+b);
-        double linelength_2 = Math.sqrt(c+d);
-        System.out.println("length of a first line is : "+linelength_1);
-        System.out.println("length of a second line is : "+linelength_2);
+        double lineLength_1 = Math.sqrt(a+b);
+        double lineLength_2 = Math.sqrt(c+d);
+        System.out.println("length of a first line is : "+lineLength_1);
+        System.out.println("length of a second line is : "+lineLength_2);
 
         if(Objects.equals(linelength_1, linelength_2))
             System.out.println("the lengths are equal");
