@@ -1,6 +1,5 @@
 package com.bridgelabz;
-
-import static java.lang.Double.compare;
+import java.util.Objects;
 
 public class LineComparison {
     public static void main(String[] args) {
@@ -21,18 +20,10 @@ public class LineComparison {
         double lineLength_2 = Math.sqrt(c+d);
         System.out.println("length of a first line is : "+lineLength_1);
         System.out.println("length of a second line is : "+lineLength_2);
-        int compareLength = (compare(lineLength_1, lineLength_2));
-        System.out.println(compareLength);
-        switch (compareLength) {
-            case 0:
-                System.out.println("Line 1 is equal to line 2");
-                break;
-            case 1:
-                System.out.println("Line 1 is greater than line 2");
-                break;
-            default:
-                System.out.println("Line 1 is less than line 2");
-                break;
-        }
+
+        if(Objects.equals(lineLength_1, lineLength_2))
+            System.out.println("the lengths are equal");
+        else
+            System.out.println("the lengths are not equal");
     }
 }
